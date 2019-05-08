@@ -26,7 +26,7 @@ set cpo&vim
 
 " Grab visual selection and do simple math on it...
 function! VMATH_YankAndAnalyse ()
-    return "y:call VMATH_Analyse()\<CR>gv"
+    return "y\<Esc>:call VMATH_Analyse()\<CR>gv"
 endfunction
 
 " What to consider a number...
